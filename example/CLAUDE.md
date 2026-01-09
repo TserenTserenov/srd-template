@@ -13,13 +13,13 @@
 content/
 ├── 0.Management/           # F0 — управление хранилищем
 ├── A.Target/               # Ядро A: Целевая система
-│   ├── A1.Suprasystem/     # Среда человека
-│   ├── A2.System-of-Interest/  # Впечатлённый человек
-│   └── A3.Constructor/     # ORA (ивент-продукт)
+│   ├── A1.Надсистема/      # Среда человека
+│   ├── A2.Целевая система/ # Впечатлённый человек
+│   └── A3.Система создания/ # ORA (ивент-продукт)
 ├── B.Product/              # Ядро B: Наша система
-│   ├── B1.Suprasystem/     # Создатель ORA
-│   ├── B2.System-of-Interest/  # Приложение
-│   └── B3.Constructor/     # Planora
+│   ├── B1.Надсистема/      # Создатель ORA
+│   ├── B2.Целевая система/ # Приложение
+│   └── B3.Система создания/ # Planora
 └── X.Bridge/               # Мосты между ядрами
 ```
 
@@ -27,24 +27,24 @@ content/
 
 | Код | Ядро | Система | Роль |
 |-----|------|---------|------|
-| A1.1 | Target | Suprasystem | Meaning |
-| A1.2 | Target | Suprasystem | Architecture |
-| A1.3 | Target | Suprasystem | Operations |
-| A2.1 | Target | SoI | Meaning |
-| A2.2 | Target | SoI | Architecture |
-| A2.3 | Target | SoI | Operations |
-| A3.1 | Target | Constructor | Meaning |
-| A3.2 | Target | Constructor | Architecture |
-| A3.3 | Target | Constructor | Operations |
-| B1.1 | Product | Suprasystem | Meaning |
-| B1.2 | Product | Suprasystem | Architecture |
-| B1.3 | Product | Suprasystem | Operations |
-| B2.1 | Product | SoI | Meaning |
-| B2.2 | Product | SoI | Architecture |
-| B2.3 | Product | SoI | Operations |
-| B3.1 | Product | Constructor | Meaning |
-| B3.2 | Product | Constructor | Architecture |
-| B3.3 | Product | Constructor | Operations |
+| A1.1 | Target | Надсистема | Предприниматель |
+| A1.2 | Target | Надсистема | Инженер |
+| A1.3 | Target | Надсистема | Менеджер |
+| A2.1 | Target | Целевая система | Предприниматель |
+| A2.2 | Target | Целевая система | Инженер |
+| A2.3 | Target | Целевая система | Менеджер |
+| A3.1 | Target | Система создания | Предприниматель |
+| A3.2 | Target | Система создания | Инженер |
+| A3.3 | Target | Система создания | Менеджер |
+| B1.1 | Product | Надсистема | Предприниматель |
+| B1.2 | Product | Надсистема | Инженер |
+| B1.3 | Product | Надсистема | Менеджер |
+| B2.1 | Product | Целевая система | Предприниматель |
+| B2.2 | Product | Целевая система | Инженер |
+| B2.3 | Product | Целевая система | Менеджер |
+| B3.1 | Product | Система создания | Предприниматель |
+| B3.2 | Product | Система создания | Инженер |
+| B3.3 | Product | Система создания | Менеджер |
 
 ## Определения систем
 
@@ -83,17 +83,17 @@ A3 (ORA) использует B2 (Приложение)
 ### Создание документа
 
 1. Определи ядро (A или B)
-2. Определи систему (1=Suprasystem, 2=SoI, 3=Constructor)
-3. Определи роль (1=Meaning, 2=Architecture, 3=Operations)
+2. Определи систему (1=Надсистема, 2=Целевая система, 3=Система создания)
+3. Определи роль (1=Предприниматель, 2=Инженер, 3=Менеджер)
 4. Размести в соответствующей папке
 
 ### Пример
 
 Документ о требованиях к Приложению:
 - Ядро: B (Product)
-- Система: B2 (System-of-Interest = Приложение)
-- Роль: B2.1 (Meaning = требования)
-- Путь: `content/B.Product/B2.System-of-Interest/B2.1.Meaning/`
+- Система: B2 (Целевая система = Приложение)
+- Роль: B2.1 (Предприниматель = требования)
+- Путь: `content/B.Product/B2.Целевая система/B2.1.Предприниматель/`
 
 ## Терминология
 
