@@ -192,7 +192,9 @@ s2r/
 │   │   ├── fpf/                     # Копия FPF-Spec
 │   │   ├── fpf-integration.md
 │   │   └── fpf-patterns-map.md
-│   ├── 0.5.AI-Reports/              # Автоматические отчёты
+│   ├── 0.5.AI-Reports/              # AI-проверки и отчёты
+│   │   ├── Validation-Specs/        # ТЗ на проверки
+│   │   └── Validation-Results/      # Результаты проверок
 │   ├── 0.6.Repository-Processes/    # Стандарты, процессы
 │   │   ├── README.md
 │   │   ├── 01-project-description-template.md  # ⭐ Шаблон описания проекта

@@ -50,7 +50,14 @@ s2r/
 │   ├── fpf/                     # Копия спецификации FPF
 │   ├── fpf-integration.md
 │   └── fpf-patterns-map.md
-├── 0.5.AI-Reports/              # Автоматические отчёты
+├── 0.5.AI-Reports/              # AI-проверки и отчёты
+│   ├── README.md
+│   ├── Validation-Specs/        # ТЗ на проверки
+│   │   ├── README.md
+│   │   ├── 01-formal-checks.md
+│   │   ├── 02-content-checks.md
+│   │   └── 03-development-analysis.md
+│   └── Validation-Results/      # Результаты проверок
 ├── 0.6.Repository-Processes/    # Процессы и стандарты
 │   ├── README.md
 │   ├── 01-project-description-template.md
