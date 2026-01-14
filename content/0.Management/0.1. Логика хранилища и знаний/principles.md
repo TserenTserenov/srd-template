@@ -16,6 +16,7 @@ fpf_principles:
   - minimalism
   - systemic-thinking
   - metadata-first
+  - srr-structure
 fpf_patterns:
   - A.1      # Holonic Foundation
   - A.1.1    # Bounded Context
@@ -94,7 +95,7 @@ fpf_patterns:
 - `type` — тип документа
 - `status` — статус (stub, draft, active, archived)
 - `created`, `updated` — даты
-- `system`, `role` — место в SRT-таблице
+- `system`, `role` — место в матрице SRR
 
 **Рекомендуемые поля:**
 - `target_audience` — целевая аудитория
@@ -163,7 +164,7 @@ fpf_patterns:
 ### Чек-лист для нового документа
 
 - [ ] Определён тип документа
-- [ ] Выбрано место в SRT-таблице (система + роль)
+- [ ] Выбрано место в матрице SRR (система + роль)
 - [ ] Заполнен YAML frontmatter
 - [ ] Указаны связанные документы
 - [ ] Соблюдён шаблон папки

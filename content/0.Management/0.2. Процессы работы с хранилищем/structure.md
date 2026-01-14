@@ -57,7 +57,7 @@ fpf_patterns:
 ## Верхнеуровневая структура
 
 ```
-srt-template/
+s2r/
 ├── README.md                    # Главное описание проекта
 ├── CLAUDE.md                    # Инструкции для Claude Code
 ├── CONTRIBUTING.md              # Правила участия
@@ -67,7 +67,7 @@ srt-template/
 │   ├── FPF-Spec.md              # Полная спецификация FPF
 │   └── FPF-Readme.md            # Обзор FPF
 │
-└── content/                     # Контент по методу SRT
+└── content/                     # Контент по методу S2R (SRR)
     ├── 0.Management/            # Метасистема
     ├── 1.Suprasystem/           # Надсистема
     ├── 2.System-of-Interest/    # Целевая система
