@@ -317,11 +317,17 @@ A.Target-System/
 ### Правильный подход
 
 ```
-✅ Правильно:
-A.Impressed-Customer/
-├── A1.Daily-Life-Context/
-├── A2.Impressed-Customer/
-└── A3.Event-Experience/
+✅ Правильно (Автомобиль):
+A.Automobile/
+├── A1.Taxi/                     # Физическая надсистема
+├── A2.Automobile/
+└── A3.Assembly-Line/            # Система-создатель
+
+✅ Правильно (Приложение):
+B.Mobile-App/
+├── B1.User-Smartphone/          # Физическая надсистема
+├── B2.Mobile-App/
+└── B3.Dev-Team/                 # Система-создатель
 ```
 
 ---

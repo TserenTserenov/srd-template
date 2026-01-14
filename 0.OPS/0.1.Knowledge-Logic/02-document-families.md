@@ -231,7 +231,7 @@ fpf_patterns:
 
 **Примеры правильного именования:**
 ```
-A.Impressed-Customer/A0.Impressed-Customer-Management/
+A.Automobile/A0.Automobile-Management/
 B.Mobile-App/B0.Mobile-App-Management/
 C.Backend-Service/C0.Backend-Service-Management/
 ```
@@ -259,23 +259,31 @@ C.Backend-Service/C0.Backend-Service-Management/
 
 | Документ | Ядро | Семейство | Путь |
 |----------|------|-----------|------|
-| Анализ рынка | A | FA1 | `A.Impressed-Customer/A1.Daily-Life/A1.1.Meaning/` |
+| Анализ рынка | A | FA1 | `A.Automobile/A1.Taxi/A1.1.Meaning/` |
 | API-спецификация | B | FB5 | `B.Mobile-App/B2.Mobile-App/B2.2.Architecture/` |
 | Структура команды | B | FB9 | `B.Mobile-App/B3.Dev-Team/B3.3.Operations/` |
-| Требования к продукту | A | FA4 | `A.Impressed-Customer/A2.Impressed-Customer/A2.1.Meaning/` |
+| Требования к продукту | A | FA4 | `A.Automobile/A2.Automobile/A2.1.Meaning/` |
 
 ### Правило именования папок
 
+> **ВАЖНО:** X1 — это **физическая система**, не контекст, процесс или область.
+
 ```
-Хорошо:
-A.Impressed-Customer/           # Имя целевой системы
-├── A1.Daily-Life/              # Имя надсистемы
-├── A2.Impressed-Customer/      # Имя SoI (совпадает с ядром)
-└── A3.Product-Ecosystem/       # Имя конструктора
+Хорошо (Автомобиль):
+A.Automobile/                   # Имя целевой системы
+├── A1.Taxi/                    # Надсистема: физическая система
+├── A2.Automobile/              # Имя SoI (совпадает с ядром)
+└── A3.Assembly-Line/           # Имя конструктора
+
+Хорошо (Приложение):
+B.Mobile-App/
+├── B1.User-Smartphone/         # Надсистема: физическая система
+├── B2.Mobile-App/
+└── B3.Dev-Team/
 
 Плохо:
 A.Target/                       # Абстрактно
-├── A1.Suprasystem/             # Это роль, не имя системы
+├── A1.Daily-Life/              # ❌ "Повседневная жизнь" — НЕ система
 ├── A2.System-of-Interest/      # Это роль, не имя системы
 └── A3.Constructor/             # Это роль, не имя системы
 ```
@@ -294,4 +302,4 @@ A.Target/                       # Абстрактно
 
 - [01-kernels-model.md](01-kernels-model.md) — что такое ядро
 - [04-ontology.md](04-ontology.md) — общая онтология
-- [../0.2.Repository-Processes/standards.md](../0.2.Repository-Processes/standards.md) — стандарты оформления
+- [../0.6.Repository-Processes/02-standards.md](../0.6.Repository-Processes/02-standards.md) — стандарты оформления

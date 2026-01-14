@@ -215,7 +215,7 @@ A.Customer-Success/          # Целевая система
 ### Вывод из примера
 
 1. **Ядро = перспектива команды** — каждая команда работает со своим ядром
-2. **Связи обязательны** — ядра не изолированы, их связи описаны в `0.3.Kernels-Bridge/`
+2. **Связи обязательны** — ядра не изолированы, их связи описаны в `0.2.Kernels-Bridge/`
 3. **Онтология требует согласования** — команды должны договориться о терминах
 4. **Глубина может быть любой** — проект может иметь 2, 3, 4+ уровней ядер
 
@@ -344,7 +344,7 @@ B.Ecosystem/
 |---------------|-----|--------|
 | **Роль подсистем в целом** | В X2 родительской системы (FX5) | Архитектура целого |
 | **Устройство подсистемы** | В X2 подсистемы (отдельное ядро) | Своя перспектива |
-| **Стыки между ядрами** | 0.OPS/0.3.Kernels-Bridge/ + FX3 | Интеграция |
+| **Стыки между ядрами** | 0.OPS/0.2.Kernels-Bridge/ + FX3 | Интеграция |
 
 ### Пример: Экосистема с подсистемами
 
@@ -370,7 +370,7 @@ D.Subsystem-2/                    # Ещё одна подсистема
 ### Реестр стыков
 
 Стыки между ядрами фиксируются в:
-- `0.OPS/0.3.Kernels-Bridge/02-kernels-relations.md` — матрица связей
+- `0.OPS/0.2.Kernels-Bridge/02-kernels-relations.md` — матрица связей
 - `{X}1.3.Operations/` (FX3) — взаимодействие с надсистемой
 
 ---
@@ -413,7 +413,7 @@ D.Subsystem-2/                    # Ещё одна подсистема
 
 ```
 Хорошо:
-├── A.Impressed-Customer/        # Целевая: впечатлённый клиент
+├── A.Automobile/                # Целевая: автомобиль
 ├── B.Mobile-App/                # Наша система: мобильное приложение
 ├── C.Recommendation-Engine/     # Наша система: движок рекомендаций
 └── D.Analytics-Platform/        # Наша система: аналитическая платформа
@@ -427,18 +427,30 @@ D.Subsystem-2/                    # Ещё одна подсистема
 
 ### Правило 2: Подпапки также именуются осмысленно
 
+> **ВАЖНО:** X1 (надсистема) — это **физическая система**, а не контекст, процесс или область знания.
+
 ```
 Хорошо:
-A.Impressed-Customer/
-├── A1.Daily-Life-Context/       # Надсистема: контекст повседневной жизни
-├── A2.Impressed-Customer/       # SOI: впечатлённый клиент
-└── A3.Event-Experience/         # Создатель: мероприятие
+A.Automobile/
+├── A1.Taxi/                     # Надсистема: такси (физическая система)
+├── A2.Automobile/               # SOI: автомобиль
+└── A3.Assembly-Line/            # Создатель: конвейер (система производства)
+
+B.Mobile-App/
+├── B1.User-Smartphone/          # Надсистема: смартфон пользователя
+├── B2.Mobile-App/               # SOI: мобильное приложение
+└── B3.Dev-Team/                 # Создатель: команда разработки
 
 Плохо:
 A.Target/
 ├── A1.Suprasystem/              # Абстрактно
 ├── A2.System-of-Interest/       # Шаблонно
 └── A3.Constructor/              # Неинформативно
+
+A.Product/
+├── A1.Daily-Life/               # ❌ "Повседневная жизнь" — НЕ система
+├── A2.Product/
+└── A3.Experience/               # ❌ "Опыт" — НЕ система
 ```
 
 ### Правило 3: Согласованность внутри ядра
@@ -448,7 +460,7 @@ A.Target/
 ```
 B.Mobile-App/                    # Ядро названо по SOI
 ├── B0.Mobile-App-Management/    # Управление согласовано
-├── B1.App-User-Context/         # Надсистема: контекст пользователя
+├── B1.User-Smartphone/          # Надсистема: физическая система
 ├── B2.Mobile-App/               # SOI = имя ядра
 └── B3.Dev-Team/                 # Создатель: команда разработки
 ```
@@ -494,8 +506,8 @@ mkdir -p C.Recommendation-Engine/C3.ML-Team/C3.{1,2,3}.{Meaning,Architecture,Ope
 ### Шаг 6: Обнови связи
 
 1. Обнови [03-our-systems-map.md](03-our-systems-map.md)
-2. Обнови [../0.3.Kernels-Bridge/value-chain.md](../0.3.Kernels-Bridge/value-chain.md)
-3. Обнови [../0.3.Kernels-Bridge/kernels-relations.md](../0.3.Kernels-Bridge/kernels-relations.md)
+2. Обнови [../0.2.Kernels-Bridge/01-value-chain.md](../0.2.Kernels-Bridge/01-value-chain.md)
+3. Обнови [../0.2.Kernels-Bridge/02-kernels-relations.md](../0.2.Kernels-Bridge/02-kernels-relations.md)
 
 ## Когда создавать новое ядро?
 
@@ -526,10 +538,10 @@ mkdir -p C.Recommendation-Engine/C3.ML-Team/C3.{1,2,3}.{Meaning,Architecture,Ope
 
 ## Связи между ядрами
 
-Связи описываются в `0.3.Kernels-Bridge/`:
-- `value-chain.md` — цепочка создания ценности
-- `kernels-relations.md` — матрица связей
-- `systems-hierarchy.md` — иерархия вложенности
+Связи описываются в `0.2.Kernels-Bridge/`:
+- `01-value-chain.md` — цепочка создания ценности
+- `02-kernels-relations.md` — матрица связей
+- `03-systems-hierarchy.md` — иерархия вложенности
 
 ## Связь с FPF
 
@@ -544,4 +556,4 @@ mkdir -p C.Recommendation-Engine/C3.ML-Team/C3.{1,2,3}.{Meaning,Architecture,Ope
 
 - [02-document-families.md](02-document-families.md) — 9 семейств внутри ядра
 - [03-our-systems-map.md](03-our-systems-map.md) — карта наших систем
-- [../0.3.Kernels-Bridge/value-chain.md](../0.3.Kernels-Bridge/value-chain.md) — цепочка ценности
+- [../0.2.Kernels-Bridge/01-value-chain.md](../0.2.Kernels-Bridge/01-value-chain.md) — цепочка ценности

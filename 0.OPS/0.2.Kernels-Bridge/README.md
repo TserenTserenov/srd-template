@@ -7,7 +7,7 @@ family: F0
 scope: repository
 ---
 
-# 0.3. Kernels Bridge
+# 0.2. Kernels Bridge
 
 Связи и отношения между ядрами хранилища.
 

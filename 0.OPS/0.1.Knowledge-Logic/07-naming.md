@@ -22,24 +22,33 @@ scope: repository
 
 ```
 0.OPS/     # Числовой префикс + PascalCase
-A.Impressed-Customer/        # Буква ядра + имя целевой системы
+A.Automobile/                # Буква ядра + имя целевой системы
 B.Mobile-App/                # Буква ядра + имя нашей системы
 ```
 
 ### Уровень системы
 
-> **Важно:** Используйте имена конкретных систем, а не абстрактные роли.
+> **Важно:** X1 — это **физическая система**, не контекст, процесс или область.
 
 ```
-Хорошо:
-A1.Daily-Life/               # Имя надсистемы
-A2.Impressed-Customer/       # Имя целевой системы (SoI)
-A3.Product-Ecosystem/        # Имя конструктора
+Хорошо (на примере автомобиля):
+A1.Taxi/                     # Надсистема: физическая система (такси)
+A2.Automobile/               # Имя целевой системы (SoI)
+A3.Assembly-Line/            # Имя конструктора (конвейер)
+
+Хорошо (на примере приложения):
+B1.User-Smartphone/          # Надсистема: физическая система (смартфон)
+B2.Mobile-App/               # SoI
+B3.Dev-Team/                 # Конструктор
 
 Плохо:
-A1.Suprasystem/              # Это роль, не имя системы
-A2.System-of-Interest/       # Абстрактно
-A3.Constructor/              # Не описывает, ЧТО создаёт
+A1.Daily-Life/               # ❌ "Повседневная жизнь" — НЕ система
+A1.Market/                   # ❌ "Рынок" — НЕ физическая система
+A1.Industry/                 # ❌ "Отрасль" — НЕ физическая система
+A3.Experience/               # ❌ "Опыт" — НЕ система
+A1.Suprasystem/              # ❌ Это роль, не имя системы
+A2.System-of-Interest/       # ❌ Абстрактно
+A3.Constructor/              # ❌ Не описывает, ЧТО создаёт
 ```
 
 ### Уровень роли
@@ -55,11 +64,13 @@ X1.3.Operations/
 ### Уровень F0
 
 ```
-0.1.Knowledge-Logic/         # Функциональная область
-0.2.Repository-Processes/
-0.3.Kernels-Bridge/
-0.4.Plans-and-Meetings/
-0.5.AI-Reports/
+0.1.Knowledge-Logic/         # Онтология и модель знаний
+0.2.Kernels-Bridge/          # Связи между ядрами
+0.3.Roles-Matrix-3x3/        # Матрица ролей 3×3
+0.4.FPF-Integration/         # Интеграция с FPF
+0.5.AI-Reports/              # Автоматические отчёты
+0.6.Repository-Processes/    # Процессы и стандарты
+0.7.Plans-and-Meetings/      # Планирование
 0.9.Inbox/
 0.99.Archive/
 ```
@@ -93,7 +104,7 @@ _index.md                    # Если нужен индекс (редко)
 ### Хорошо
 
 ```
-A.Impressed-Person/          # Конкретно, понятно
+A.Automobile/                # Конкретная техническая система
 B.Mobile-App/                # Описывает систему
 C.Backend-Service/           # Технически точно
 D.Analytics-Platform/        # Функционально
@@ -106,6 +117,8 @@ A.Target/                    # Слишком абстрактно
 B.System2/                   # Неинформативно
 C.Module/                    # Размыто
 D.Other/                     # Бессмысленно
+A.Impressed-Customer/        # ❌ "Клиент" — роль, не система
+A.Experience/                # ❌ "Опыт" — процесс, не система
 ```
 
 ## Примеры полных путей
@@ -114,7 +127,9 @@ D.Other/                     # Бессмысленно
 
 ```
 0.OPS/0.1.Knowledge-Logic/01-kernels-model.md
-A.Impressed-Customer/A2.Impressed-Customer/A2.1.Meaning/requirements.md
+A.Automobile/A1.Taxi/A1.1.Meaning/market-analysis.md
+A.Automobile/A2.Automobile/A2.1.Meaning/requirements.md
+B.Mobile-App/B1.User-Smartphone/B1.2.Architecture/device-integration.md
 B.Mobile-App/B3.Dev-Team/B3.3.Operations/team-structure.md
 C.Backend-Service/C2.Backend-Service/C2.2.Architecture/api-schema.md
 ```
@@ -123,10 +138,11 @@ C.Backend-Service/C2.Backend-Service/C2.2.Architecture/api-schema.md
 
 ```
 A.Target-System/A2.System-of-Interest/A2.1.Meaning/requirements.md
+A.Product/A1.Daily-Life/A1.1.Meaning/context.md           # ❌ Daily-Life — не система
 B.Our-System/B3.Constructor/B3.3.Operations/team-structure.md
 ```
 
 ## См. также
 
 - [06-taxonomy.md](06-taxonomy.md) — классификация документов
-- [../0.2.Repository-Processes/standards.md](../0.2.Repository-Processes/standards.md) — стандарты
+- [../0.6.Repository-Processes/02-standards.md](../0.6.Repository-Processes/02-standards.md) — стандарты

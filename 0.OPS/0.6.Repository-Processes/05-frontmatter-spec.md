@@ -205,5 +205,5 @@ Frontmatter должен:
 
 ## См. также
 
-- [standards.md](standards.md) — стандарты оформления
-- [document-creation.md](document-creation.md) — процесс создания
+- [02-standards.md](02-standards.md) — стандарты оформления
+- [04-document-creation.md](04-document-creation.md) — процесс создания

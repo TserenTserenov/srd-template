@@ -233,24 +233,24 @@ D. Dev-      E. Support-
     App/       API/        Engine/
 ```
 
-### Пример 3: Платформа мероприятий
+### Пример 3: Система умного дома
 
 ```
-[Впечатления участника]
+[Комфорт жильца]
            ↑
-  A. Impressed-Person/
-  ├── A1.Daily-Life/
-  ├── A2.Impressed-Person/
-  └── A3.Event-Experience/
+  A. Smart-Home/
+  ├── A1.House/                    # Физическая надсистема
+  ├── A2.Smart-Home/
+  └── A3.Installation-Team/
            ↑
-   B. Event-App/
-   ├── B1.Organizer-Context/
-   ├── B2.Event-App/
-   └── B3.Dev-Team/
+   B. IoT-Hub/
+   ├── B1.Smart-Home/              # Hub входит в Smart-Home
+   ├── B2.IoT-Hub/
+   └── B3.Hardware-Team/
            ↑
      ┌─────┼─────┐
      ↓     ↓     ↓
-C. Backend/ D. CMS/  E. ML-Recs/
+C. Sensors/ D. Cloud/ E. Mobile-App/
 ```
 
 ## Как использовать цепочку

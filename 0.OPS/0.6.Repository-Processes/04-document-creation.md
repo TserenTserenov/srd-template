@@ -125,6 +125,6 @@ role: Meaning
 
 ## См. также
 
-- [standards.md](standards.md) — стандарты оформления
-- [frontmatter-spec.md](frontmatter-spec.md) — спецификация метаданных
-- [../0.1.Knowledge-Logic/document-families.md](../0.1.Knowledge-Logic/document-families.md) — модель семейств
+- [02-standards.md](02-standards.md) — стандарты оформления
+- [05-frontmatter-spec.md](05-frontmatter-spec.md) — спецификация метаданных
+- [../0.1.Knowledge-Logic/02-document-families.md](../0.1.Knowledge-Logic/02-document-families.md) — модель семейств
