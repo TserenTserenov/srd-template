@@ -41,7 +41,7 @@ SRR (Systems–Roles Repository): a multi-kernel systems×roles (3×3) project r
 - **Ядро A** — всегда относительно **главной целевой системы** проекта
 - **Ядра B, C, D...** — относительно **"наших систем"**
 
-> **Важно:** Папки ядер именуются по **имени системы**, а не абстрактно. Например: `A.Impressed-Customer/`, а не `A.Target-System/`.
+> **Важно:** Папки ядер именуются по **имени системы**, а не абстрактно. Например: `A.Automobile/`, а не `A.Target-System/`.
 
 ### "Наши системы" (Our Systems)
 
@@ -277,14 +277,22 @@ git init
 
 ### 3. Переименуйте папки с реальными именами
 
+> **Важно:** X1 (надсистема) — это **физическая система**, в которую входит целевая система, а не контекст или процесс.
+
 ```bash
-# Переименуйте ядро A
-mv A.SOI-Name A.Impressed-Customer
+# Пример для автомобиля
+mv A.SOI-Name A.Automobile
 
 # Переименуйте подпапки
-mv A.Impressed-Customer/A1.Suprasystem-Name A.Impressed-Customer/A1.Daily-Life
-mv A.Impressed-Customer/A2.SOI-Name A.Impressed-Customer/A2.Impressed-Customer
-mv A.Impressed-Customer/A3.Constructor-Name A.Impressed-Customer/A3.Product-Ecosystem
+mv A.Automobile/A1.Suprasystem-Name A.Automobile/A1.Taxi            # Надсистема: такси (водитель + автомобиль)
+mv A.Automobile/A2.SOI-Name A.Automobile/A2.Automobile              # SoI: сам автомобиль
+mv A.Automobile/A3.Constructor-Name A.Automobile/A3.Assembly-Line   # Конструктор: конвейер
+
+# Пример для мобильного приложения
+mv A.SOI-Name A.Mobile-App
+mv A.Mobile-App/A1.Suprasystem-Name A.Mobile-App/A1.User-Smartphone  # Надсистема: смартфон пользователя
+mv A.Mobile-App/A2.SOI-Name A.Mobile-App/A2.Mobile-App
+mv A.Mobile-App/A3.Constructor-Name A.Mobile-App/A3.Dev-Team
 ```
 
 ### 4. Определите "наши системы" (Ядра B, C...)
