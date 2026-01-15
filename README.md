@@ -170,7 +170,7 @@ F0 отвечает за:
 s2r/
 ├── 0.OPS/         # F0: Метаэпистема хранилища
 │   ├── 0.1.Knowledge-Logic/         # Онтология, модель ядер
-│   │   ├── 00-readme.md
+│   │   ├── README.md
 │   │   ├── 01-kernels-model.md      # ⭐ Модель ядер
 │   │   ├── 02-document-families.md  # ⭐ Семейства F1-F9
 │   │   ├── 03-our-systems-map.md    # ⭐ Карта систем
