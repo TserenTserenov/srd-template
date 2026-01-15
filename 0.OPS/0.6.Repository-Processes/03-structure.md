@@ -28,7 +28,7 @@ s2r/
 ├── README.md
 ├── CLAUDE.md                    # Инструкции для AI
 ├── 0.1.Knowledge-Logic/         # Онтология и модель
-│   ├── 00-readme.md
+│   ├── README.md
 │   ├── 01-kernels-model.md
 │   ├── 02-document-families.md
 │   ├── 03-our-systems-map.md

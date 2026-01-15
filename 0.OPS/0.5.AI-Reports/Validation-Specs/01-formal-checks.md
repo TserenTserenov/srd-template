@@ -184,7 +184,7 @@ A2.Automobile/A2.2.Architecture/ → FA5
 ### 5.2. Наличие README.md
 
 **Что проверяем:**
-- Каждая папка содержит README.md или 00-readme.md
+- Каждая папка содержит README.md
 - README содержит описание содержимого папки
 
 **Уровень:** Warning
