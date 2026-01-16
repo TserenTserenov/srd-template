@@ -331,7 +331,7 @@ cp -r B.Our-System-Name C.Payment-Gateway
 | Файл | Что содержит |
 |------|--------------|
 | `0.OPS/0.6.Repository-Processes/03-structure.md` | Полная структура репозитория |
-| `0.OPS/CLAUDE.md` | Структура в разделе "Структура 0.OPS/" |
+| `CLAUDE.md` (корневой) | Инструкции для AI-агентов |
 | `README.md` (корневой) | Обзор структуры проекта |
 | `0.OPS/0.1.Knowledge-Logic/03-our-systems-map.md` | Карта всех систем |
 | `0.OPS/0.2.Kernels-Bridge/01-value-chain.md` | Цепочка ценности |

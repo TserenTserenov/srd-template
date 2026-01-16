@@ -374,4 +374,4 @@ fpf_patterns:
 - [roles-matrix-brief.md](roles-matrix-brief.md) — краткая версия матрицы
 - [02-document-families.md](../0.1.Knowledge-Logic/02-document-families.md) — семейства документов F1-F9
 - [01-kernels-model.md](../0.1.Knowledge-Logic/01-kernels-model.md) — модель ядер
-- [CLAUDE.md](../CLAUDE.md) — инструкции для Claude Code
+- [CLAUDE.md](../../CLAUDE.md) — инструкции для Claude Code

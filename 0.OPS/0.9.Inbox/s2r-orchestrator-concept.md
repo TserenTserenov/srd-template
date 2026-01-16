@@ -193,6 +193,6 @@ scope: repository
 
 ## См. также
 
-- [CLAUDE.md](../CLAUDE.md) — текущие инструкции для AI
+- [CLAUDE.md](../../CLAUDE.md) — текущие инструкции для AI
 - [02-document-families.md](../0.1.Knowledge-Logic/02-document-families.md) — семейства документов
 - [roles-matrix.md](../0.3.Roles-Matrix-3x3/roles-matrix.md) — матрица ролей

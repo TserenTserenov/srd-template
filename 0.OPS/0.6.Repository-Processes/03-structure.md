@@ -13,10 +13,11 @@ scope: repository
 
 ```
 s2r/
-├── 0.OPS/     # F0: Метаэпистема хранилища
+├── 0.OPS/                       # F0: Метаэпистема хранилища
 ├── A.SOI-Name/                  # Ядро A: Целевая система
 ├── B.Our-System-Name/           # Ядро B: Наша система
 ├── C.../                        # Ядра C, D... (по необходимости)
+├── CLAUDE.md                    # ⭐ Инструкции для AI
 ├── README.md                    # Описание проекта
 └── CONTRIBUTING.md              # Правила участия
 ```
@@ -26,7 +27,6 @@ s2r/
 ```
 0.OPS/
 ├── README.md
-├── CLAUDE.md                    # Инструкции для AI
 ├── 0.1.Knowledge-Logic/         # Онтология и модель
 │   ├── README.md
 │   ├── 01-kernels-model.md

@@ -350,4 +350,4 @@ B.Mobile-App/
 
 - [01-kernels-model.md](01-kernels-model.md) → "Система vs Эпистема", "Фиксированная структура X1/X2/X3"
 - [04-ontology.md](04-ontology.md) → "Запрещённые термины и конструкции"
-- [CLAUDE.md](../CLAUDE.md) → "КРИТИЧЕСКИЕ ПРАВИЛА multi-kernel S2R"
+- [CLAUDE.md](../../CLAUDE.md) → "КРИТИЧЕСКИЕ ПРАВИЛА multi-kernel S2R"

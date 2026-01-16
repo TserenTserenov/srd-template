@@ -500,8 +500,8 @@ E.Team-2/             → команда-2 как система, создаёт
 
 ## См. также
 
-- [CLAUDE.md](../CLAUDE.md) → Часть 3.5: Режим Repository-First
-- [CLAUDE.md](../CLAUDE.md) → Часть 5: Примеры рассуждений
+- [CLAUDE.md](../../CLAUDE.md) → Часть 3.5: Режим Repository-First
+- [CLAUDE.md](../../CLAUDE.md) → Часть 5: Примеры рассуждений
 - [08-anti-patterns.md](08-anti-patterns.md) → Полный список анти-паттернов
 - [01-kernels-model.md](01-kernels-model.md) → Модель ядер
 - [02-document-families.md](02-document-families.md) → Семейства документов

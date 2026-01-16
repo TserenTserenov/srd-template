@@ -241,5 +241,5 @@ Constructor           [FPF]            [FPF]             [FPF]
 ## Ссылки
 
 - [README.md](../README.md) — описание S2R
-- [CLAUDE.md](../CLAUDE.md) — интеграция FPF с Claude Code
+- [CLAUDE.md](../../../CLAUDE.md) — интеграция FPF с Claude Code
 - [CONTRIBUTING.md](../CONTRIBUTING.md) — правила работы с FPF

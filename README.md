@@ -207,8 +207,7 @@ s2r/
 │   │   └── 08-deployment-guide.md   # ⭐ Руководство по развёртыванию
 │   ├── 0.7.Plans-and-Meetings/      # Планирование
 │   ├── 0.9.Inbox/                   # Входящие идеи
-│   ├── 0.99.Archive/                # Архив
-│   └── CLAUDE.md                    # ⭐ Инструкции для AI
+│   └── 0.99.Archive/                # Архив
 │
 ├── A.SOI-Name/                      # Ядро A: ШАБЛОН (переименовать!)
 │   ├── A0.SOI-Name-Management/      # FA0: Управление ядром
@@ -228,6 +227,7 @@ s2r/
 ├── B.Our-System-Name/               # Ядро B: ШАБЛОН (переименовать!)
 │   └── ... (аналогичная структура)
 │
+├── CLAUDE.md                        # ⭐ Инструкции для AI
 ├── README.md                        # Этот файл
 └── CONTRIBUTING.md                  # Правила участия
 ```
@@ -313,7 +313,7 @@ mv A.Automobile/A3.Constructor-Name A.Automobile/A3.Assembly-Line
 5. **Переименуйте папки** — используя имена систем
 6. **Заполните шаблоны** — README, карта систем, value-chain
 
-Смотрите инструкции в [CLAUDE.md](0.OPS/CLAUDE.md).
+Смотрите инструкции в [CLAUDE.md](CLAUDE.md).
 
 ---
 
@@ -350,7 +350,7 @@ mv A.Automobile/A3.Constructor-Name A.Automobile/A3.Assembly-Line
 
 - **Введение в системное мышление:** [docs.system-school.ru](https://docs.system-school.ru/ru/personal/systems-thinking-introduction/preface)
 - **FPF:** [github.com/ailev/FPF](https://github.com/ailev/FPF)
-- [CLAUDE.md](0.OPS/CLAUDE.md) — инструкции для работы с Claude Code
+- [CLAUDE.md](CLAUDE.md) — инструкции для работы с Claude Code
 - [CONTRIBUTING.md](CONTRIBUTING.md) — правила участия
 
 ---
